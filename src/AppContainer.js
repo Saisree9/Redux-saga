@@ -1,7 +1,9 @@
 import React from "react";
 import {connect} from "react-redux";
 import App from "./App";
-import {fetchCharacters} from "./action";
+import {fetchCharacters} from "./action"
+
+// import {fetchCharacters} from "./action-using-thunk";
 
 
 class AppContainer extends React.Component {
@@ -11,7 +13,8 @@ class AppContainer extends React.Component {
     };
 
     componentDidMount () {
-        this.props.dispatch(fetchCharacters());
+        // this.props.dispatch(fetchCharacters());
+        fetchCharacters()
     }
 
     componentWillReceiveProps (nextProps) {
