@@ -9,7 +9,7 @@ step 2:
     yarn start
 
 It will run/start your app in your local port 3000
-    [https://localhost:3000](https://localhost:3000)
+    [http://localhost:3000](http://localhost:3000)
 
 
 I want to compare redux-thunk and redux-saga
